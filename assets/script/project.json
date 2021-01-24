@@ -1,0 +1,157 @@
+[{
+    "type": "illustration",
+    "cardImg": "efe.png",
+    "cardAlt": "Efe George Digital Portrait",
+    "title": "Efe George Portrait",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "efe.png"
+        }, {
+            "video": false,
+            "content": "efe2.png"
+        }, {
+            "video": false,
+            "content": "efe3.jpg"
+        }, {
+            "video": true,
+            "content": "efe4.mp4"
+        }],
+        "title": "Efe George Digital Portrait",
+        "para": "This is a digital Portrait also refered to as cartooning of Efe George (Instagram handle #geo_gream') it is designed to look like the main person."
+    }
+}, {
+    "type": "design",
+    "cardImg": "shopmore.png",
+    "cardAlt": "ShopMore UI/UX Design",
+    "title": "Shop More Design",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "shopmore.png"
+        }, {
+            "video": false,
+            "content": "shopmore2.png"
+        }, {
+            "video": false,
+            "content": "shopmore3.png"
+        }],
+        "title": "ShopMore UI/UX Design",
+        "para": "Christmas has always hard a way of appealing to everyone so we decided to make a Christmas themed e-commerce design to commemorate the holiday."
+    }
+}, {
+    "type": "design",
+    "cardImg": "maica.png",
+    "cardAlt": "Maica Mall Digital Branding",
+    "title": "Maica Mall Branding",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "maica.png"
+        }, {
+            "video": false,
+            "content": "maica2.png"
+        }],
+        "title": "Maica Mall Digital branding",
+        "para": "This is a digital Portrait also refered to as cartooning of Efe George (Instagram handle #geo_gream') it is designed to look like the main person."
+    }
+}, {
+    "type": "design",
+    "cardImg": "space_exploration_ui.png",
+    "cardAlt": "Space themed Website Design",
+    "title": "Space web Design",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "space_exploration_ui.png"
+        }, {
+            "video": false,
+            "content": "space_exploration_ui2.png"
+        }],
+        "title": "Space themed Website Design",
+        "para": "This design was born out of my undying love for space exploration and all of the mysteries that lies within it."
+    }
+}, {
+    "type": "illustration",
+    "cardImg": "gladis.png",
+    "cardAlt": "Gladis Digital Portrait",
+    "title": "Gladis Pepple Portrait",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "gladis.png"
+        }, {
+            "video": false,
+            "content": "gladis2.jpg"
+        }],
+        "title": "Gladis Digital Portrait",
+        "para": "This is a digital Portrait also refered to as cartooning of Efe George (Instagram handle #geo_gream') it is designed to look like the main person."
+    }
+}, {
+    "type": "web",
+    "cardImg": "typer.gif",
+    "cardAlt": "slick typer responsive web game",
+    "title": "Slick Typer web game",
+    "modalDetails": {
+        "images": [{
+            "video": true,
+            "content": "typer.mp4"
+        }],
+        "title": "slick typer reponsive web game",
+        "para": "Slick Typer is a web game designed to help strengthen users typing skills. <br>link: <strong><a href=\"https://slicktyper.netlify.app\" target=\"_blank\">slick typer</a></strong> <br> Github: <strong><a href=\"\" target=\"_blank\">GitHubRepo</a></strong>"
+    }
+}, {
+    "type": "design",
+    "cardImg": "housebonny.png",
+    "cardAlt": "HouseBonny Branding",
+    "title": "House Bonny Branding",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "housebonny.png"
+        }, {
+            "video": false,
+            "content": "housebonny2.png"
+        }, {
+            "video": false,
+            "content": "housebonny3.png"
+        }, {
+            "video": false,
+            "content": "housebonny4.png"
+        }, {
+            "video": false,
+            "content": "housebonny5.png"
+        }],
+        "title": "House Bonny Branding",
+        "para": "This is a digital Portrait also refered to as cartooning of Efe George (Instagram handle #geo_gream') it is designed to look like the main person."
+    }
+}, {
+    "type": "design",
+    "cardImg": "star.png",
+    "cardAlt": "Star logo Concept",
+    "title": "Star logo Concept",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "star.png"
+        }, {
+            "video": false,
+            "content": "star2.png"
+        }],
+        "title": "Star logo Concept",
+        "para": "Conceptual branding logo for a potential business 😻."
+    }
+}, {
+    "type": "design",
+    "cardImg": "mobile_ui.png",
+    "cardAlt": "E-Commerce Mobile App Design",
+    "title": "E-Commerce Mobile UI ",
+    "modalDetails": {
+        "images": [{
+            "video": false,
+            "content": "mobile_ui.png"
+        }],
+        "title": "E-Commerce Mobile App Design",
+        "para": "This is a digital Portrait also refered to as cartooning of Efe George (Instagram handle #geo_gream') it is designed to look like the main person."
+    }
+}]

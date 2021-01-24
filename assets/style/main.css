@@ -1,0 +1,424 @@
+/*Go up button */
+
+button.go-up{
+    position:fixed;
+    bottom:2em;
+    right:1em;
+    background:var(--secondary-color);
+    color:white;
+    cursor:pointer;
+    width:2em;
+    height: 2em;
+    font-size:18px;
+    font-weight:bolder;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    animation-name:hover-up;
+    animation-duration: 0.6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+
+
+    transition:opacity 0.5s;
+    opacity:0;
+    pointer-events:none;
+}
+
+@media (min-width:600px){
+    button.go-up{
+        right:2em;
+        bottom:2em;
+    }
+}
+
+
+button.go-up.show{
+    opacity:0.8;
+    pointer-events:auto;
+}
+
+
+
+@keyframes hover-up{
+    from{
+        transform:translateY(0em);
+    }to{
+        transform:translateY(0.2em);
+    }
+}
+
+
+
+/*Social Media Icon */
+.social-media-icon-container {
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.social-media-icon-container.active {
+    transform: translateX(-2em);
+}
+
+@media (max-width:754px) {
+    .social-media-icon-container {
+        display: none;
+    }
+}
+
+.social-media-icon-container ul:first-child li {
+    background: rgba(0, 84, 148, 0.06);
+    padding: 0.5em 0.7em;
+}
+
+.social-media-icon-container ul:first-child li a {
+    color: #080808;
+    font-size: 13px;
+}
+
+.social-media-icon-container ul:first-child li:hover {
+    background: rgba(0, 0, 0, 0.27);
+
+}
+
+.social-media-icon-container ul:first-child li:hover a {
+    color: white;
+}
+
+.social-media-icon-container ul:last-child li {
+    cursor: pointer;
+    color: #005494;
+    padding: 1em;
+    animation-name: move-right;
+    animation-duration: 0.6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    transform: rotate(180deg);
+}
+
+.social-media-icon-container ul:last-child li.active {
+    animation-name: move-left !important;
+}
+
+.social-media-icon-container ul:last-child li i {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.social-media-icon-container.disabled {
+    transform: translateX(-2.4em);
+}
+
+@keyframes move-left {
+    from {
+        transform: translateX(0em) rotate(0deg)
+    }
+
+    to {
+        transform: translateX(0.1em) rotate(0deg)
+    }
+}
+
+@keyframes move-right {
+    from {
+        transform: translateX(0em) rotate|(180deg)
+    }
+
+    to {
+        transform: translateX(0.1em) rotate(180deg)
+    }
+}
+
+
+/*Navigation Section */
+.navigation {
+/*    width: 100%;*/
+    padding: 1em var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 555;
+    transition: background 0.5s;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.03);
+
+    position: sticky;
+    top: 0;
+}
+
+
+
+.navigation:hover {
+    background: white;
+}
+
+@media (min-width:600px) {
+    .navigation {
+        padding: 0.5em var(--padding);
+    }
+}
+
+.navigation__logo-container {
+    padding: 0 !important;
+}
+
+.navigation__logo-container .logo_svg {
+    width: 2.5em;
+    height:inherit;
+    fill:white;
+}
+.logo_svg .fil0{
+    fill:black;
+    transition:all 0.5s;
+}
+.logo_svg.active .fil0{
+    fill:white;
+}
+
+.navigation__list-container {
+    margin-left: auto;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 15px 1px rgba(0, 84, 148, 0.16);
+    background: rgba(0, 84, 148, 0.95);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+    transition-property: opacity, transform;
+    will-change: opacity, transform;
+}
+
+
+@media (max-width:600px) {
+    .navigation__list-container {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.navigation.active .navigation__list-container {
+    transform: scaleX(1);
+    position: fixed;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.navigation__list-container li {
+    padding: 3vh 0;
+}
+
+
+.navigation__list-container a {
+    font-family: var(--font);
+    text-decoration: none;
+    font-size: 15px;
+    color: #e3e3e3;
+}
+
+.navigation__navbar-container {
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+    padding:1em 0.5em;
+    display:flex;
+    flex-flow:column;
+    align-items: flex-end;
+
+}
+
+.navigation__navbar-container .navbar {
+    width: 0.9em;
+    height: 0.13em;
+    border-radius: 65em;
+    background: black;
+    transition: 0.5s;
+    transition-property: transform, background;
+    will-change: opacity, transform;
+}
+
+.navigation__navbar-container .navbar:before {
+    content: '';
+    border-radius: 65em;
+    width: 1.1em;
+    margin-left: 0em;
+    background-color: black;
+    height: 0.13em;
+    position: absolute;
+    margin-top: 0.33em;
+    transition: transform 0.5s;
+    will-change: opacity, transform;
+}
+
+.navigation__navbar-container .navbar:after {
+    content: '';
+    width: 1.1em;
+    border-radius: 65em;
+    background-color: black;
+    height: 0.12em;
+    margin-left: 0em;
+    position: absolute;
+    margin-top: -0.37em;
+    transition: transform 0.5s;
+    will-change: opacity, transform;
+}
+
+
+
+.navigation.active .navbar {
+    background: transparent;
+}
+
+.navigation.active .navbar:after {
+    background: white;
+    /*transform: translate(0em, 0.3em) rotate(46deg);*/
+    transform: translate(0em, 0.34em) rotate(46deg);
+}
+
+.navigation.active .navbar:before {
+    background: white;/*
+    transform: translate(0em, -0.45em) rotate(-46deg);*/
+    transform:translate(0em, -0.35em) rotate(-44deg);
+}
+
+.navigation__social-media {
+    padding: 6vw 0;
+    display: flex;
+}
+
+.navigation__social-media li {
+    text-align: center;
+    padding: 0em 0.4em;
+}
+
+.navigation__social-media li a {
+    font-size: 20px;
+}
+
+@media (min-width:600px) {
+    .navigation {
+        padding: 1em var(--padding);
+    }
+
+    .navigation ul {
+        display: flex;
+        background: none;
+        box-shadow: 0px 0px transparent;
+    }
+
+    .navigation ul li {
+        padding: 0px 1em;
+    }
+
+    .navigation ul a {
+        color: initial;
+    }
+
+    ul .navigation__social-media {
+        display: none;
+    }
+
+   /* .navigation__logo-container img {
+        width: 2.4em;
+    }*/
+
+    .navigation__list-container {
+        display: flex;
+        position: static;
+        width: auto;
+        height: auto;
+        flex-flow: row;
+        opacity: 1;
+        transition: 0;
+        transform: none;
+    }
+
+    .navigation .navigation__navbar-container {
+        display: none;
+    }
+
+}
+
+.progress_bar{
+    width:100%;
+    position:absolute;
+    bottom:0;
+}
+.progress_bar .bar{
+    padding:0.05em 0;
+    color:var(--secondary-color);
+    transition:0.2em;
+    opacity:0.4;
+    will-change: width;
+    background:var(--secondary-color);
+}
+
+/*Navigation Section End*/
+
+
+
+/*Footer Section*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 1em 0;
+    color: white;
+    font-family: var(--font);
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+    flex-flow: column;
+}
+
+footer > div {
+    padding: 1em 0;
+}
+
+.footer__social-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 10em;
+}
+.footer__social-icon-container li{
+	transition:transform 0.5s;
+	will-change:transfrom;
+}
+.footer__social-icon-container li:hover {
+    background: white;
+	transform:rotate(12deg);
+}
+
+.footer__social-icon-container li:hover a {
+    color: #005494;
+}
+
+.footer__social-icon-container li {
+    padding: 0.6em 1em;
+    will-change: transform;
+}
+
+.footer__social-icon-container li a {
+    color: white;
+}

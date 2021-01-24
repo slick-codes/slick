@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+@font-face{
+    font-family: geosanslight;
+    src: url(../fonts/GeosansLight.ttf);
+  }
+  
+
+.canvas{
+    background:white;
+    width:100%;
+    height:100vh;
+    position:fixed;
+    z-index: 9999;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    transition:opacity 0.3s;
+
+
+    /*display:none;*/
+}
+.canvas.deactivate{
+    opacity:0;
+    pointer-events:none;
+}
+.canvas hr{
+    width:0em;
+    border:solid var(--secondary-color ) 1px;
+    transition:width 0.3s;
+}
+.topSection{
+    display:flex;
+    overflow:hidden;
+}
+.bottomSection{
+    display:flex;
+    overflow:hidden;
+}
+.canvas span{
+    font-size:50px;
+    font-family:geosanslight;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+    animation-direction:alternate-reverse;
+    animation-fill-mode:both;
+    color:var(--secondary-color);
+}
+
+.topSection span{
+    animation-name:wave-up;
+    transition:1s;
+    transform:translateY(1em)
+}
+.bottomSection span{
+    animation-name:wave-down;
+    opacity:0.5;
+}
+@keyframes wave-up{
+    from{
+        transform:translateY(0em)
+    }to{
+        transform:translateY(1em);
+    }
+}
+@keyframes wave-down {
+    from{
+        transform:translateY(0em) rotate(180deg) rotateY(180deg)
+    }to{
+        transform:translateY(-1em) rotate(180deg) rotateY(180deg)
+    }
+}
+

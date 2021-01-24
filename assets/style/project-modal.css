@@ -1,0 +1,171 @@
+
+.project__preview-container{
+	background:rgba(0, 0, 0 , .5);
+	height:100vh;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	display:flex;
+	z-index: 444444;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	overflow-y:auto;
+}
+
+.project__preview-content{
+	display:flex;
+	flex-flow:column;
+	justify-content: center;
+	align-items:;
+	overflow-y: ;
+	margin:0 auto;
+	position:relative;
+}
+@media (min-width:600px){
+	.project__preview-content{
+		flex-flow:row;
+	}
+}
+
+.project__preview-img img , 
+.project__preview-img video{
+	width:100%;
+}
+
+.preview-image-container{
+    transition:transform 0.6s;
+    will-change: transform;
+    display:flex;
+    width:100%;
+
+}
+.preview-image-container > div{
+	width:100%;
+	min-width:0;
+	display:flex;
+	flex-flow:row;
+	justify-content: center;
+	align-items: center;
+	min-width:100%;
+}
+.project__preview-img{
+	display:flex;
+	justify-content: ;
+	align-items: center;
+	overflow:hidden;
+	position:relative;
+}
+
+.project__preview-img .preview-control-btn{
+	display:flex;
+	position:absolute;
+	width:100%;
+	height:;
+	background:blue;
+	z-index: 4;
+}
+
+.preview-control-btn > div{
+	position:absolute;
+	padding:2em 1em;
+	display:flex;
+	transform:translateY(-4em);
+	justify-content: center;
+	align-items: center;
+}
+.preview-control-btn div.ArrowRight{
+	right:0;
+}
+.preview-control-btn div i{
+	background:#0000006b;
+	padding:1em;
+	pointer-events:none;
+	border-radius:50em;
+	pointer-events:;
+	color:white;
+}
+.project__preview-txt{
+	width:100%;
+	background:white;
+	padding:0px var(--padding);
+	padding-bottom:1em;
+	font-family:var(--font);
+	display:flex;
+	flex-flow:column;
+	justify-content: center;
+}
+.project__preview-txt h1{
+	/*text-align:center;*/
+	font-family:var(--font);
+	text-transform:uppercase;
+	font-size:20px;
+	color:var(--secondary-color);
+	padding:1em 0;
+}
+span.title {
+	font-weight:bolder;
+}
+.project__preview-txt p{
+	padding:0em 0;
+}
+
+@media (min-width:600px){
+	.project__preview-img{
+		width:100%;
+	}
+	.project__preview-content{
+		padding:0;
+		width:80%;
+		align-self: stretch;
+	}
+	.project__preview-txt{
+		height:inherit;
+		padding:1em;
+	width:20em;
+	}
+}
+.preview-counter{
+	position:absolute;
+	background: black;
+	padding:0.2em 0.6em;
+	border-radius: 50em;
+	background:rgb( 0 0 0 / 85%);
+	left:1em;
+	top:1em;
+	color:white;
+	z-index: 44;
+	font-family:var(--font);
+}
+.preview-close{
+	border-radius:100em;
+	background:rgb(0 0 0 / 80%);
+	height:2em;
+	width:2em;
+	position:absolute;
+	top:1em;
+	right:1em;
+	z-index: 44;
+	cursor:pointer;
+}
+.preview-close:active{
+	background:black;
+}
+
+.preview-close::before ,
+.preview-close::after{
+	content:"";
+	width:1.4em;
+	height:0.2em;
+	margin-top:1em;
+	background: white;
+	position:absolute;
+	transform-origin:center;
+}
+.preview-close::after{
+	transform:rotate(43deg) translate(3px , -3px);
+}
+.preview-close::before{
+	transform: rotate(-43deg) translate(4px , 2px)
+}

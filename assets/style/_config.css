@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style:none;
+    scroll-behavior: smooth;
+    outline:none;
+}
+
+@font-face{
+  font-family: gothic;
+  src: url(../fonts/century_gothic_regular.ttf);
+}
+
+@media(max-width:600px){
+    body{
+        height:100%;
+        width:100%;
+    }
+
+::-webkit-scrollbar {
+    	width: 0.8%;
+	height: 10px;
+	background-color: #F1F1F1;
+   }
+}
+
+/*== ScrollBar styling==*/
+body::-webkit-scrollbar {
+    	width: 0.8em;
+	height: 10px;
+	background-color: #F1F1F1;
+   }
+   
+   
+   body::-webkit-scrollbar-thumb {
+	   border-radius: 0px;
+	   //background:#C0C0C0;
+	background-color:#570889;
+    }
+/*==^^ScrollBar styling ^^==*/
+
+
+:root{
+    --main-gray:;
+    --light-gray:;
+    /*--font: Century Gothic;*/
+    --font: gothic;
+    --padding:8vw;
+    --inner-paddng:13vw;
+    --center-padding: ;
+    --secondary-color: /*#570889*/ #005494;
+	--primary-color: /* #444 */ #1d1e33;
+/*    --light-background:#efefef;*/
+    --light-background:#f6f6f6 /* rgba(0, 84, 148, 0.08);*/;
+}
